@@ -1,34 +1,45 @@
 // السؤال الأول
-// 1
+const name = "حسين";
 
-// 2
+let age = 17;
 
-// 3 and 4
+console.log("أنا " + name + " " + "و عمري " + age);
 
-// 5 and 6
+let agetimes5 = age * 5;
+
+console.log(agetimes5);
 
 // -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
 
 // السؤال الثاني
-// 1
 
-// 2
+let hobbies = ["العزف", "الرسم", "النوم "];
 
-// 3
+hobbies.push(age);
+hobbies[4] = age;
 
-// 4
+console.log(hobbies);
+console.log(hobbies.length);
 
-// 5
+hobbies.pop();
+console.log(hobbies);
 
-// 6
+let stuff = {
+  course: "web",
+  FavoriteSyntax: "CSS",
+};
 
-// 7
+stuff["mentors"] = ["نانسي", "موضي", "مناور"];
+
+console.log(stuff.course);
+console.log(stuff["mentors"][0]);
 
 // -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-
-
-// البونص
-// 1
-
-// 2
+stuff["ILS"] = sentence();
+function sentence() {
+  sentence = "I love sleeping";
+  return console.log(sentence);
+}
+console.log(stuff["ILS"]); // stuff["ILS"]()
 
 // console results => console.png
